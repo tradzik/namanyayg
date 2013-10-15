@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Namanyay Goel - Everything - @namanyayg
+
+# TECHNOLOGY COLOPHON
+
+    Prepros - http://alphapixels.com/prepros/
+    Jade - http://jade-lang.com/
+    SCSS - http://sass-lang.com/
+    Sympl - http://github.com/namanyayg/sympl
+    jQuery Waypoints - http://imakewebthings.com/jquery-waypoints/
+    HTML5
+    CSS3
+    jQuery
+    HTML5Boilerplate

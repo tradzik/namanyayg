@@ -1,0 +1,194 @@
+!!! 5
+// if lt IE 7
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+// if IE 7
+    <html class="no-js lt-ie9 lt-ie8">
+// if IE 8
+    <html class="no-js lt-ie9">
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+block vars
+
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content='Namanyay Goel\'s design and front end development portfolio.')
+    meta(name='viewport', content='width=device-width')
+    link(href='static/css/main.css', rel='stylesheet', type='text/css', media='all')
+    link(href='http://fonts.googleapis.com/css?family=Varela+Round|Lato:300,400,700,300italic', rel='stylesheet', type='text/css', media='all')
+    //if lt IE 9
+        script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+    script
+        document.documentElement.className = 
+               document.documentElement.className.replace("no-js","js");
+    block title
+        title Namanyay Goel | Freelance Designer & Front End Developer
+body
+
+  block header
+    header.masthead.site-header
+      .wrap
+        a.main-logo(href='index.html')
+          img(src='static/img/main-logo.png')
+        nav.main-nav
+          .main-nav__toggle-btn.js-menu-toggle(unselectable='')
+            i.icon-list
+          ul
+            li
+              a.main-nav__item(href='#home') Home
+            li
+              a.main-nav__item(href='#work') Work
+            li
+              a.main-nav__item(href='#process') Process
+            li
+              a.main-nav__item(href='#contact') Contact
+            li
+              a.main-nav__item(href='http://symmetrycode.com/', target='_blank') Blog
+
+  block hero
+    .hero.main-section
+      .wrap
+        .hero-container
+          .hero__impline
+            h1
+              | Hello, I'm 
+              em Namanyay Goel
+            span , a freelance designer & front end developer.
+          p
+            | I design and develop 
+            em engaging
+            | , 
+            em functional
+            | , 
+            em elegant
+            | , and 
+            em simple 
+            | user interfaces.
+          p
+            | I also work at 
+            a(href='http://makeuseof.com/') MakeUseOf 
+            | as their 
+            em UI designer/front end developer
+            | .
+          p.hero-cta
+            | Check out 
+            a(href='#work') my work
+            | , 
+            a(href='#process') my process
+            | , and 
+            a(href='#contact') hire me
+            | !
+
+  block work
+    section#work.work.main-section.js-work
+      .wrap
+        h1.section__title
+          span My Work
+
+        for item in work
+          section.work__item
+            .stack.sympl-stack
+              .sympl.half.m-full
+                a.work__item__img(href=item.url, rel='nofollow')
+                  img(src= 'static/img/portfolio/#{item.namespace}/thumb.jpg', alt= '#{item.name} Screenshot')
+              .sympl.half.m-full
+                .work__item__text
+                  h1.work__item__title!= item.name
+                  footer.work__item__meta
+                    span!= item.work
+
+                    if item.client
+                      .work__item__meta__client
+                        img(src= 'static/img/portfolio/#{item.namespace}/client.png', alt='')
+                        span!= item.client
+                  .work__item__desc
+                    if item.quote
+                      blockquote.work__item__quote
+                        p!= item.quote
+              .sympl.half.work__desc__text-container
+                .work__item__desc__text!= item.desc
+
+  block process 
+    section#process.process.main-section
+      .wrap
+        h1.section__title
+          span The Process
+
+        each process, i in processes
+
+          - var num = i + 1;
+
+          if ( i % 2 == 0 )
+            section.process__item
+              .process__item__icon
+                i(class='icon-#{process.icon}')
+              .process__item__desc
+                h1
+                  span= num + '. '
+                  !{process.title}
+                !{process.desc}
+          else 
+            section.process__item
+              .process__item__desc
+                h1
+                  span= num + '. '
+                  !{process.title}
+                !{process.desc}
+              .process__item__icon
+                i(class='icon-#{process.icon}')
+
+  block contact
+    section#contact.contact.main-section
+      .wrap
+        h1.section__title
+          span Get in touch
+        .contact-box
+          p
+            | I check mail frequently, and emailing me is the 
+            strong best option
+            |  to contact me.
+          p
+            | Feel free to write to me at 
+            span.email-pseudolink
+              | mail
+              span [at]
+              | namanyayg.com
+            |.
+          p
+            | I'm 
+            strong available for work
+            | , for questions, or just small chat.
+          .contact__social
+            p I'm also active at social media. Hit me up on:
+            a(target='_blank', href='http://plus.google.com/110643109850030635499?rel=author', alt='NamanyayG on Google Plus')
+              i.icon-google-plus
+              span Google Plus
+            a(target='_blank', href='http://dribbble.com/namanyayg', alt='NamanyayG on Dribble')
+              i.icon-dribbble
+              span Dribbble
+            a(target='_blank', href='http://github.com/namanyayg', alt='NamanyayG on Github')
+              i.icon-github
+              span Github
+            a(target='_blank', href='http://twitter.com/namanyayg', alt='NamanyayG on Twitter')
+              i.icon-twitter
+              span Twitter
+
+  block footer 
+    footer.colophon
+      span Built with care 
+      | by Namanyay Goel.
+      br
+      span ♥
+
+  block jquery
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')           
+  
+  block js
+    script(src='static/js/main.min.js')
+
+  block ga
+    script
+      var _gaq=[['_setAccount','UA-30368451-1'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));

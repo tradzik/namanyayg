@@ -520,15 +520,6 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 RewriteCond %{THE_REQUEST} ^GET\ (.*)\.php\ HTTP
 RewriteRule (.*)\.php$ $1 [R=301]
 
-
-# remove index
-RewriteRule (.*)/index$ $1/ [R=301]
-
-# remove slash if not directory
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} /$
-RewriteRule (.*)/ $1 [R=301]
-
 # Redirect to Symmetrycode
 Redirect 301 /weblog http://symmetrycode.com
 Redirect 301 /home3/namanyay/public_html/weblog http://symmetrycode.com

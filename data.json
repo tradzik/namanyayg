@@ -1,5 +1,13 @@
 var work = [
   {
+  "url":"http://makeuseof.com",
+  "work":"Web design & front-end development",
+  "namespace":"muo",
+  "type": "self",
+  "name":"MakeUseOf",
+  "desc":"<p>I was hired by <a href='http://makeuseof.com/' rel='nofollow'>MakeUseOf</a> on January 2013. Over the course of months, I worked with the team, especially the founder Aibek Esengulov and head developer James Bruce, to create a consistent and beautiful design to be used on MakeUseOf.</p><p>I was incharge of the design and front-end development, back-end being done by James Bruce. I was tasked to create a uniform identity to best present MakeUseOf to it's varying readers.</p>"
+  },
+  {
   "client":"Matthew Schmoldt",
   "url":"http://ohthethingsyoucanbuy.com",
   "work":"Branding, web design & development",

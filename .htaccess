@@ -516,11 +516,6 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
   php_value session.cookie_httponly true
 </IfModule>
 
-# Redirect to Symmetrycode
-Redirect 301 /weblog http://symmetrycode.com
-Redirect 301 /home3/namanyay/public_html/weblog http://symmetrycode.com
-
 # Redirect forpatrickjoyce.php to home
 Redirect 301 /forpatrickjoyce.php http://namanyayg.com/
 Redirect 301 /forpatrickjoyce http://namanyayg.com/
-Redirect 301 /home3/namanyay/public_html/forpatrickjoyce http://namanyayg.com/

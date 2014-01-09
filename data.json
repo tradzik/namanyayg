@@ -8,6 +8,14 @@ var work = [
   "desc":"<p>I was hired by <a href='http://makeuseof.com/' rel='nofollow'>MakeUseOf</a> on January 2013. Over the course of months, I worked with the team, especially the founder Aibek Esengulov and head developer James Bruce, to create a consistent and beautiful design to be used on MakeUseOf.</p><p>I was incharge of the design and front-end development, back-end being done by James Bruce. I was tasked to create a uniform identity to best present MakeUseOf to it's varying readers.</p>"
   },
   {
+  "url":"http://makeuseof.tv",
+  "work":"Web design & front-end development",
+  "namespace":"muotv",
+  "type": "self",
+  "name":"MakeUseOf TV",
+  "desc":"<p><a href='http://makeuseof.tv/'>MakeUseOf TV</a>, or the Techophilia Technology podcast, is a podcast run by the team at MakeUseOf. In creating this site, I worked primarily with James Bruce and Jackson Chung, creating a neat, easy to use, and easy to share site based on flat design principles. The design had to be consistent with the main site, while at the same time, being new and different enough.</p>"
+  },
+  {
   "client":"Matthew Schmoldt",
   "url":"http://ohthethingsyoucanbuy.com",
   "work":"Branding, web design & development",
@@ -33,14 +41,14 @@ var work = [
   "type": "self",
   "desc":"<p><a href='http://webstiles.namanyayg.com/'>Webstiles</a> is an open-source template, made by me, for designers to quickly prototype web designs. It allows for easy and rapid prototyping of a site, by defining colors, typography, UI bits, and more.</p><p>The Webstiles template was built using Sympl, another open-source project of mine, and plain CSS and HTML. The template and the site were built to ensure responsiveness, and both work great on many devices.</p><p>The source code's available on <a href='https://github.com/namanyayg/webstiles'>Github</a>.</p>"
   },
-  {
+  /* {
   "url":"http://namanyayg.com/lab/keyzen",
   "work":"Web design & development. Side Project.",
   "namespace":"key",
   "name":"KeyZen",
   "type": "self",
   "desc":"<p><a href='http://namanyayg.com/lab/keyzen'>KeyZen</a> is a quick and simple web 'app' I made over a Saturday. It started out with making a keyboard, then made into to a touch-typing game with validation and statistics</p><p>KeyZen is made using JS, CSS, and HTML, and operates fully on the front end. The JS is scalable and easy to edit.</p>"
-  },
+  } */,
 
 ],
 
